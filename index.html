@@ -2,6 +2,8 @@
 <html ng-app="githubViewer">
 
   <head>
+    <link data-require="bootstrap@3.3.7" data-semver="3.3.7" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script data-require="bootstrap@3.3.7" data-semver="3.3.7" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script data-require="angular.js@*" data-semver="1.2.22" src="https://code.angularjs.org/1.2.22/angular.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
@@ -9,13 +11,12 @@
 
   <body ng-controller="mainController">
     <h1>{{message}}</h1>
-
-      <div>{{error}}</div>
-      <form name="searchUser" ng-submit="search(username)">
-        <input type="search" required placeholder="Username to find" ng-model="username" />
-        <input type="submit" value="Search"/>
-      </form>
-      <div ng-show="user" ng-include="'userdetails.html'"></div>
+    <div>{{error}}</div>
+    <form name="searchUser" ng-submit="search(username)">
+      <input type="search" required="" placeholder="Username to find" ng-model="username" />
+      <input type="submit" value="Search" />
+    </form>
+    <div ng-show="user" ng-include="'userdetails.html'"></div>
   </body>
 
 </html>
