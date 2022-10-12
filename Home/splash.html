@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  margin: 0;
+		}
+
+		.trigger {
+		  position: fixed;
+		  top: 2rem;
+		  right: 2rem;
+		}
+		.trigger a {
+		  font-size: 2rem;
+		  color: white;
+		  -webkit-transition: color 200ms ease;
+		  transition: color 200ms ease;
+		}
+		.trigger a:hover {
+		  color: rgba(255, 255, 255, 0.7);
+		}
+
+		#sky {
+		  background-size: cover;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  height: 100vh;
+		  width: 100vw;
+		}
+
+		.title {
+		  margin: 0;
+		  color: white;
+		  position: absolute;
+		  bottom: 2rem;
+		  right: 2rem;
+		  font-family: "Cabin", sans-serif;
+		  letter-spacing: 2px;
+		}
+		.title h1 {
+		  font-size: 2rem;
+		  text-transform: uppercase;
+		  margin-bottom: 0.5rem;
+		  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+		}
+		.title h2 {
+		  font-size: 1.3rem;
+		  font-weight: 400;
+		  margin: 0;
+		  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+		}
+	
+	</style>
+	
+</head>
+
+<body>
+	<!-- Manual trigger to refresh the page-->
+	<div class="trigger"><a href="splash.html"><i class="zmdi zmdi-refresh-alt"></i></a></div>
+	<!-- Sky-->
+	<div id="sky">
+	  <div class="title">
+		<h1>Night Sky</h1>
+		<h2>Don't concentrate on the finger</h2>
+	  </div>
+	</div>
+	
+	<script>
+		// control the auto refresh rate -> 1000 = 1 second
+		var refreshRate = 600000; // 10 seconds
+
+		// Automatically reload the browser
+		setInterval(function() {
+		   window.location.reload();
+		}, refreshRate);
+
+		// Hide the images on load
+		$('#sky').hide();
+
+		// Get a random image from Unsplash and fade it in on load
+		$('#sky').css({
+		  // serves a random image from this collection on Unsplash.com
+		  'background-image' : 'url(https://source.unsplash.com/collection/1194081/1600x900)'
+		}).fadeIn(1500);
+
+	</script>
+</body>
+</html>

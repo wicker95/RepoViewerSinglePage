@@ -1,0 +1,36 @@
+SessionId: 4D7C9D015CDA446AA8E1961D0683E475
+Session_ID: 4D7C9D015CDA446AA8E1961D0683E475
+
+_ID is not deleted during logout
+
+
+
+
+
+
+
+
+<s:String 
+x:Key="/Default/FilterSettingsManager/CoverageFilterXml/@EntryValue">&lt;data&gt;&lt;
+IncludeFilters /&gt;&lt;
+ExcludeFilters&gt;&lt;
+Filter ModuleMask="Humana.Digital.Members.Experience.*" ModuleVersionMask="*" ClassMask="Humana.Digital.Members.Experience.*.Models.*" FunctionMask="*" IsEnabled="True" /&gt;&lt;
+Filter ModuleMask="Humana.Digital.Members.Experience.*" ModuleVersionMask="*" ClassMask="Humana.Digital.Members.Experience.*.ViewModels.*" FunctionMask="*" IsEnabled="True" /&gt;&lt;
+Filter ModuleMask="Humana.Digital.Members.Experience.*.Test" ModuleVersionMask="*" ClassMask="*" FunctionMask="*" IsEnabled="True" /&gt;&lt;
+Filter ModuleMask="Humana.Digital.Members.Experience.*" ModuleVersionMask="*" ClassMask="Humana.Digital.Members.Experience.*.*Startup" FunctionMask="*" IsEnabled="True" /&gt;&lt;
+Filter ModuleMask="Humana.Digital.Members.Experience.*" ModuleVersionMask="*" ClassMask="Humana.Digital.Members.Experience.*.Program" FunctionMask="*" IsEnabled="True" /&gt;&lt;/ExcludeFilters&gt;&lt;/data&gt;</s:String>
+
+
+
+
+<s:String x:Key="/Default/FilterSettingsManager/
+CoverageFilterXml/@EntryValue">&lt;data&gt;&lt;
+IncludeFilters /&gt;&lt;
+ExcludeFilters&gt;&lt;
+Filter ModuleMask="*" ModuleVersionMask="*" ClassMask="*Tests*" FunctionMask="*" IsEnabled="True" /&gt;&lt;/ExcludeFilters&gt;&lt;/data&gt;</s:String>
+
+
+	<s:String x:Key="/Default/FilterSettingsManager/
+CoverageFilterXml/@EntryValue">&lt;data&gt;&lt;
+IncludeFilters /&gt;&lt;ExcludeFilters&gt;&lt;
+Filter ModuleMask="*" ModuleVersionMask="*" ClassMask="*Tests*" FunctionMask="*" IsEnabled="True" /&gt;&lt;/ExcludeFilters&gt;&lt;/data&gt;</s:String>

@@ -1,0 +1,81 @@
+﻿body {
+    /*
+	-webkit-user-select: none;
+    pointer-events: none;
+	*/
+	background: #000;
+    color: #fff;
+    font-family: Consolas, Courier New, Helvetica, Arial;
+    
+}
+
+p, span {
+    -moz-transition: color 0.4s ease-out;
+    -ms-transition: color 0.4s ease-out;
+    -webkit-transition: color 0.4s ease-out;
+    color: #333333;
+    font-size: 17px;
+    letter-spacing: 12.1px;
+    transition: color 0.4s ease-out;
+
+}
+
+#midnight {
+    color: #000;
+    letter-spacing: 28px;
+}
+
+#it, #is, span.active {
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 0 12px #fff;
+    /*
+            -moz-transition: color 0.4s ease-out;
+            -ms-transition: color 0.4s ease-out;
+            -webkit-transition: color 0.4s ease-out;
+            color: #fff !important;
+            transition: color 0.4s ease-out;
+            */
+}
+
+#text-clock {
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    text-align: justify;
+}
+
+/*
+#line-1, #line-1 span {
+    letter-spacing: 13.9px;
+}
+
+#line-2, #line-2 span {
+    letter-spacing: 11.3px;
+}
+
+#line-7, #line-7 span {
+    letter-spacing: 11.8px;
+}
+
+#line-8, #line-8 span {
+    letter-spacing: 12.3px;
+}
+
+#line-9, #line-9 span {
+    letter-spacing: 11.6px;
+}
+
+#line-10, #line-10 span {
+    letter-spacing: 11.6px;
+}
+*/
+.hidden {
+    display: none;
+}

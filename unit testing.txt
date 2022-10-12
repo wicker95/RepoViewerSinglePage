@@ -1,0 +1,128 @@
+﻿chapter 47
+
+7.1
+CHAPTER 6
+
+ISOLATION FRAMEWORK
+An isolation framework is a set of programmable APIs that makes creating
+fake objects much simpler, faster, and shorter than hand-coding them.
+
+Isolation frameworks, when designed well, can save the developer from the
+need to write repetitive code to assert or simulate object interactions, and
+if they’re designed very well, they can make tests last many years without
+making the developer come back to fix them on every little production
+code change.
+
+DYNAMIC FAKE OBJECT
+A dynamic fake object is any stub or mock that’s created at runtime
+without needing to use a handwritten (hardcoded) implementation of
+that object.
+
+
+
+CHAPTER 4
+
+FAKE
+A fake is a generic term that can be used to describe either a stub
+or a mock object (handwritten or otherwise), because they both look like the
+real object. Whether a fake is a stub or a mock depends on how it’s used in
+the current test. If it’s used to check an interaction (asserted against), it’s a
+mock object. Otherwise, it’s a stub.
+
+
+MOCK
+A mock object is a fake object in the system that decides whether
+the unit test has passed or failed. It does so by verifying whether the object
+under test called the fake object as expected. There’s usually no more than
+one mock per test.
+
+
+INTERACTION TESTING
+Interaction testing is testing how an object sends messages (calls
+methods) to other objects. You use interaction testing when calling another
+object is the end result of a specific unit of work.
+
+CHAPTER 3
+
+REFACTORING
+Refactoring is the act of changing code without changing the code’s
+functionality. That is, it does exactly the same job as it did before. No more and
+no less. It just looks different. A refactoring example might be renaming a
+method and breaking a long method into several smaller methods.
+	■ Type A—Abstracting concrete objects into interfaces or delegates
+	■ Type B—Refactoring to allow injection of fake implementations of those delegates
+	or interfaces
+
+SEAMS
+Seams are places in your code where you can plug in different
+functionality, such as stub classes, adding a constructor parameter, adding a
+.,outside a class. Seams are what you get by implementing the Open-Closed
+Principle, where a class’s functionality is open for extenuation, but its source
+code is closed for direct modification. (See Working Effectively with Legacy Code
+by Michael Feathers, for more about seams, or Clean Code by Robert Martin
+about the Open-Closed Principle.)
+
+
+EXTERNAL DEPENDENCY
+An external dependency is an object in your system that your code
+under test interacts with and over which you have no control. (Common
+examples are filesystems, threads, memory, time, and so on.)
+
+STUB
+A stub is a controllable replacement for an existing dependency
+(or collaborator) in the system. By using a stub, you can test your code without
+dealing with the dependency directly.
+
+FAKE
+A fake denotes an object that looks like another object but can be used as a mock or a stub.
+
+
+CHAPTER 1 & 2
+SYSTEM UNDER TEST (SUT)
+SUT stands for system under test, and some people like to use CUT
+(class under test or code under test). When you test something, you refer to the
+thing you’re testing as the SUT.
+
+UNIT TEST
+A unit test is an automated piece of code
+that invokes the unit of work being tested, and then checks some assumptions
+about a single end result of that unit. A unit test is almost always written using
+a unit testing framework. It can be written easily and runs quickly. It’s trustworthy,
+readable, and maintainable. It’s consistent in its results as long as production
+code hasn’t changed.
+
+
+INTEGRATION TEST
+Integration testing is testing a unit of work without having full control
+over all of it and using one or more of its real dependencies, such as time,
+network, database, threads, random number generators, and so on.
+
+REGRESSION
+A regression is one or more units of work that once worked and
+now don’t.
+
+LEGACY CODE
+Legacy code is defined by Wikipedia as “source code that relates to
+a no-longer supported or manufactured operating system or other computer
+technology,” but many shops refer to any older version of the application currently
+under maintenance as legacy code. It often refers to code that’s hard to
+work with, hard to test, and usually even hard to read.
+
+CONTROL FLOW CODE
+Control flow code is any piece of code that has some sort of logic in
+it, small as it may be. It has one or more of the following: an if statement, a
+loop, switch, or case statement, calculations, or any other type of decisionmaking
+code.
+
+REFACTORING
+Refactoring means changing a piece of code without changing its
+functionality. If you’ve ever renamed a method, you’ve done refactoring. If
+you’ve ever split a large method into multiple smaller method calls, you’ve
+refactored your code. The code still does the same thing, but it becomes easier
+to maintain, read, debug, and change.
+
+STATE BASED TESTING
+State-based testing (also called state verification) determines whether
+the exercised method worked correctly by examining the changed behavior
+of the system under test and its collaborators (dependencies) after the method
+is exercised.
